@@ -3,9 +3,10 @@
 Startups 101 runs with no human in the loop. This file lists every automated job, how each fails safely, what to
 watch, and the keys a human can turn later.
 
-**Live:** https://theguysaccount.github.io/startup-college-startups-101/ (GitHub Pages, deployed by Actions from `main`).
-**Base URL setting:** the repository variable `SITE_URL` (unset = the github.io URL above). It is the only setting
-that moves the site; see key 1. The production domain on Jack's list is `startupcollege.io`.
+**Live:** https://learn.startupcollege.io/ (GitHub Pages, deployed by Actions from `main`). The original address,
+https://theguysaccount.github.io/startup-college-startups-101/, redirects there.
+**Base URL setting:** the repository variable `SITE_URL`, now `https://learn.startupcollege.io` (unset = the github.io
+address). It is the only setting that moves the site; see key 1.
 
 ## Automated jobs
 
@@ -31,18 +32,34 @@ every change goes through the same tests before it can deploy.
 
 ## Keys Jack can turn later
 
-### 1. The custom domain (the "domain rollout" session does this; `startupcollege.io` is in the portfolio)
+### 1. The custom domain (done: `learn.startupcollege.io`)
 
-1. DNS for `startupcollege.io`: four `A` records for `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`,
-   `185.199.111.153`; four `AAAA` → `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`,
-   `2606:50c0:8003::153`; `CNAME www` → `theguysaccount.github.io`.
-2. `gh variable set SITE_URL --body https://startupcollege.io --repo theguysaccount/startup-college-startups-101`
-3. `gh api -X PUT repos/theguysaccount/startup-college-startups-101/pages -f cname=startupcollege.io`
+The domain rollout session moved the course to `learn.startupcollege.io` on 22 Nov 2026. It chose a subdomain because
+`startupcollege.io` already serves the "Start Up College" site, and `blog`, `applicants`, `ingest` and `inst` are in
+use; all of those stay as they are. **Never point the apex (`startupcollege.io`) or `www` at this repo:** that would
+replace the existing site. What is set now:
+
+- DNS at SiteGround (the startupcollege.io zone): `CNAME learn → theguysaccount.github.io.`
+- Repository variable `SITE_URL` = `https://learn.startupcollege.io`.
+- Pages custom domain `learn.startupcollege.io`, HTTPS enforced.
+
+To move the course to another host later (a subdomain, or a domain that serves nothing today):
+
+1. DNS: `CNAME <host> → theguysaccount.github.io.` for a subdomain. An unused apex takes four `A` records
+   (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) and four `AAAA` records
+   (`2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`).
+2. `gh variable set SITE_URL --body https://<host> --repo theguysaccount/startup-college-startups-101`
+3. `gh api -X PUT repos/theguysaccount/startup-college-startups-101/pages -f cname=<host>`
 4. `gh workflow run deploy.yml --repo theguysaccount/startup-college-startups-101` (2–4 back to back).
 5. After the certificate is issued: `gh api -X PUT repos/theguysaccount/startup-college-startups-101/pages -F https_enforced=true`.
-6. Redirect domains from the brief (`startupcollege.xyz`, `foundercollege.org`, `collegeforentreprenuers.com`,
-   `ventureu.org`, `californiabusinesscollege.com`): a 301 to `https://startupcollege.io` at the registrar's URL
-   redirect or a forwarding service. `college.rip` could host a "College is dead" campaign page later as a path.
+6. About 20 minutes later, send every page to IndexNow once. A new host answers 403 at first, and later deploys send
+   only changed pages:
+   `curl -s https://<host>/sitemap.xml | grep -o '<loc>[^<]*' | sed 's/<loc>//' > urls.txt && SITE_URL=https://<host> node scripts/indexnow.mjs --file urls.txt`
+
+Optional, Jack's call: the other domains in the brief (`startupcollege.xyz`, `foundercollege.org`,
+`collegeforentreprenuers.com`, `ventureu.org`, `californiabusinesscollege.com`) could send a 301 to
+`https://learn.startupcollege.io` at the registrar, but only domains that serve nothing today. The domain rollout
+left them alone, as asked. `college.rip` could host a "College is dead" campaign page later.
 
 Every canonical URL, the sitemap, robots.txt and asset paths move with `SITE_URL` (a test builds for a root domain).
 
@@ -72,13 +89,14 @@ AI writing can't run inside Actions (no API key). A quarterly Claude Code routin
 
 ### 5. Search Console
 
-Verify `startupcollege.io` with a DNS `TXT` record once the domain points here, and submit `/sitemap.xml`.
+Add `https://learn.startupcollege.io/` as a URL-prefix property (or verify the `startupcollege.io` domain property
+with a DNS `TXT` record, which changes nothing else in the zone), then submit `https://learn.startupcollege.io/sitemap.xml`.
 
 ## Configuration reference
 
 | Variable | Where | Effect |
 |---|---|---|
-| `SITE_URL` | repo variable | public base URL; default `https://theguysaccount.github.io/startup-college-startups-101` |
+| `SITE_URL` | repo variable | public base URL, now `https://learn.startupcollege.io`; unset = `https://theguysaccount.github.io/startup-college-startups-101` |
 | `SC_APPLY_URL` | repo variable | program link on the progress page (off when empty) |
 | `SC_SUPPORT_URL` | repo variable | footer donation link (off when empty) |
 | `SC_GOATCOUNTER` | repo variable | cookieless page counts (off when empty) |

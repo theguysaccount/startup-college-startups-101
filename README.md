@@ -2,7 +2,8 @@
 
 **A free course for first-time founders where you build as you learn.**
 
-Live: https://theguysaccount.github.io/startup-college-startups-101/
+Live: https://learn.startupcollege.io/ (the original address, https://theguysaccount.github.io/startup-college-startups-101/,
+redirects there)
 
 Nine short modules, from choosing a problem to hiring your first teammate. Each module ends with a builder: a guided
 form that produces a real document (a pitch memo, a customer discovery plan, an MVP and launch plan, growth

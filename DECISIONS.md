@@ -21,3 +21,5 @@
    are LearningResources inside a Course. No thin tag pages.
 8. **Links checked weekly; content refreshed quarterly by a routine.** Gone links fail the weekly job; sites that
    refuse scripts only warn (they often block bots, not people).
+9. **The course lives on a subdomain, `learn.startupcollege.io`.** `startupcollege.io` already serves the Start Up
+   College site, so the course sits beside it instead of replacing it (the domain rollout session set it up on 22 Nov).

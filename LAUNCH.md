@@ -1,9 +1,9 @@
 # Launch
 
-- Live: https://theguysaccount.github.io/startup-college-startups-101/ (GitHub Pages). Production deploy = push to
-  `main`; tests and the browser self-test gate every deploy.
-- Production domain: `startupcollege.io` (in Jack's portfolio). Switching is one repository variable plus the Pages
-  custom-domain setting and DNS records (OPERATIONS.md, key 1); the domain rollout session handles DNS.
+- Live: https://learn.startupcollege.io/ (GitHub Pages; https://theguysaccount.github.io/startup-college-startups-101/
+  redirects there). Production deploy = push to `main`; tests and the browser self-test gate every deploy.
+- Domain: `learn.startupcollege.io`, set up by the domain rollout session. The apex `startupcollege.io` keeps serving
+  the existing Start Up College site. The base URL is one repository variable, `SITE_URL` (OPERATIONS.md, key 1).
 
 ## Distribution (machine channels only)
 
