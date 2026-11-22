@@ -1,0 +1,57 @@
+[
+  {
+    "q": "You have eight clinics using your scheduling tool. Which is the best use of your time this week?",
+    "options": [
+      "Build an automated email sequence to onboard future users.",
+      "Run paid ads aimed at reaching a thousand clinics quickly.",
+      "Wait for word of mouth to bring in new clinics on its own.",
+      "Call each clinic, help them set up, and fix problems by hand."
+    ],
+    "answer": 3,
+    "why": "With eight customers, personal help keeps them using the product and teaches you what they need. Automation and ads make more sense once you know what works."
+  },
+  {
+    "q": "You get 200 sign-ups a week, but almost nobody is still active after a month. What should you work on first?",
+    "options": [
+      "Doubling your reach so that more people sign up every week.",
+      "Activation and retention: finding out why people leave, and fixing it.",
+      "A referral program that rewards users for inviting their friends.",
+      "Raising prices so that each remaining user brings in more money."
+    ],
+    "answer": 1,
+    "why": "If people don't stay, more reach mostly produces more people who leave. Fix the early stages of the funnel before pushing more people into it."
+  },
+  {
+    "q": "What's the most useful way to learn from users who stopped using your product?",
+    "options": [
+      "Send them a discount code straight away to try to win them back.",
+      "Ignore them, since they probably weren't your target customer anyway.",
+      "Ask for a short chat about what they needed, without selling anything.",
+      "Send a survey with 25 questions covering every feature in detail."
+    ],
+    "answer": 2,
+    "why": "People who left give honest feedback when you listen rather than sell. Their stories show whether they were the wrong customer or the right customer let down by something you can fix."
+  },
+  {
+    "q": "Which of these is a well-formed growth experiment?",
+    "options": [
+      "Call each new sign-up within a day until 30 November; expect first bookings to rise from 30% to 45%.",
+      "Post on social media more often for a while and see whether anything happens.",
+      "Redesign the site, change pricing and launch referrals together in one week.",
+      "Keep the new onboarding running until the numbers look good, however long it takes."
+    ],
+    "answer": 0,
+    "why": "A useful experiment has a hypothesis, one clear action, a metric with a target and a stop date. Vague or bundled changes, or tests with no end, can't tell you what worked."
+  },
+  {
+    "q": "Your first users like your free beta. What's a sensible way to start charging?",
+    "options": [
+      "Stay free until you reach 10,000 users, then introduce pricing for everyone.",
+      "Ask your most engaged users to pay, stating any early discount clearly.",
+      "Set the price at your costs plus 10%, so that it's obviously fair.",
+      "Charge the lowest price on the market so that nobody says no."
+    ],
+    "answer": 1,
+    "why": "Payment is the clearest signal of value, and engaged users are the best place to start. Base the price on what the problem costs customers, not on your costs or the cheapest competitor."
+  }
+]

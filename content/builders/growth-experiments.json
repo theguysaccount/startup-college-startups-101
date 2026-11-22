@@ -1,0 +1,15 @@
+{
+  "slug": "growth-experiments",
+  "title": "Growth experiment board",
+  "intro": "A one-page board for your next few weeks of growth work: the one metric you're trying to move, three small experiments with stop dates, the channel you're betting on and when you'll review the results. Pin it up or share it with your team.",
+  "fields": [
+    {"id": "company", "label": "Company or project name", "help": "A working name is fine, such as 'Piano lesson booking'.", "type": "text", "required": true, "placeholder": "e.g. Piano lesson booking (working name)"},
+    {"id": "metric", "label": "The one metric you're moving", "help": "Pick the funnel stage that matters most right now and define its number precisely, such as 'Share of new sign-ups who publish a booking page within seven days'.", "type": "text", "required": true, "placeholder": "e.g. Share of new sign-ups who publish a booking page within seven days"},
+    {"id": "current", "label": "Current value", "help": "Where it stands today and how you measured it, even if it's small, such as '35% (14 of the last 40 sign-ups)'.", "type": "text", "required": true, "placeholder": "e.g. 35% (14 of the last 40 sign-ups)"},
+    {"id": "experiments", "label": "Three experiments", "help": "One per line as hypothesis → action → metric → stop date, such as 'A welcome call helps new teachers finish setup → call every new sign-up within 24 hours → seven-day publish rate from 35% to 50% → 28 November'.", "type": "list", "min": 3, "required": true},
+    {"id": "channel", "label": "The channel you're betting on, and why", "help": "One channel and the evidence behind the bet, such as 'Regional teachers' associations, because 6 of our 10 most active users came through them.'", "type": "textarea", "required": true},
+    {"id": "stop", "label": "What you'll stop if nothing moves", "help": "The activity, channel or feature you'll drop if the metric hasn't moved by the review date, such as 'Stop posting on social media and move that time to direct outreach.'", "type": "textarea", "required": true},
+    {"id": "review_date", "label": "Review date", "help": "A date shortly after your last stop date, when you'll update the numbers and decide what to keep.", "type": "text", "required": true, "placeholder": "e.g. 1 December"}
+  ],
+  "doc": "# Growth experiment board: {{company}}\n\n**The one metric we're moving:** {{metric}}\n\n**Where it stands today:** {{current}}\n\n## Experiments\n\nEach line reads: hypothesis → action → metric → stop date.\n\n{{experiments}}\n\n## The channel we're betting on\n\n{{channel}}\n\n## What we'll stop if nothing moves\n\n{{stop}}\n\n## Review date\n\nOn **{{review_date}}** we'll update the metric, keep or drop each experiment and choose the next three."
+}

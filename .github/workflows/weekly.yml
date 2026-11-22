@@ -1,0 +1,65 @@
+# Weekly: the full browser self-test against the live site, and a check of every page, file and outbound link in
+# the lessons (gone links fail; sites that refuse scripts only warn). Never changes the site. On failure it opens
+# (or updates) one issue labelled "site-health"; on recovery it closes it. Course text is refreshed by a quarterly
+# Claude routine (OPERATIONS.md), not here.
+name: Weekly checks
+
+on:
+  schedule:
+    - cron: "23 11 * * 1"    # Mondays 11:23 UTC
+    - cron: "29 */2 22,23 11 *"   # TEMPORARY: proves the schedule trigger on 22-23 Nov; remove once a scheduled run has passed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+env:
+  SITE_URL: ${{ vars.SITE_URL || format('https://{0}.github.io/{1}', github.repository_owner, github.event.repository.name) }}
+  GH_TOKEN: ${{ github.token }}
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - name: Tests on main
+        run: npm test
+      - name: Browser self-test against the live site
+        run: node scripts/selftest.mjs "$SITE_URL/" 2>&1 | tee selftest.txt; exit ${PIPESTATUS[0]}
+      - name: Every page, file and outbound link
+        if: always()
+        run: node scripts/linkcheck.mjs "$SITE_URL" 2>&1 | tee linkcheck.txt; exit ${PIPESTATUS[0]}
+      - name: Keep the screenshots
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: live-selftest-${{ github.run_number }}
+          path: selftest-out
+          retention-days: 14
+      - name: Open or update the health issue
+        if: failure()
+        run: |
+          gh label create site-health --color B60205 --description "Automated live-site check failing" 2>/dev/null || true
+          body="$(printf 'The weekly check found problems on %s (run %s/%s/actions/runs/%s):\n\n```\n%s\n%s\n```\nThe last good deploy is still live; this issue closes itself when the check passes again.' "$SITE_URL" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" "$(tail -25 selftest.txt 2>/dev/null)" "$(tail -15 linkcheck.txt 2>/dev/null)")"
+          num=$(gh issue list --label site-health --state open --json number --jq '.[0].number')
+          if [ -n "$num" ]; then gh issue comment "$num" --body "$body"; else gh issue create --title "Live site checks failing" --label site-health --body "$body"; fi
+      - name: Close the health issue after recovery
+        if: success()
+        run: |
+          for n in $(gh issue list --label site-health --state open --json number --jq '.[].number'); do
+            gh issue close "$n" --comment "Checks passing again (run $GITHUB_RUN_ID)."
+          done
+
+  keepalive:
+    if: always() && github.event_name == 'schedule'
+    needs: live
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: bash .github/scripts/keepalive.sh

@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Which situation most clearly calls for a co-founder rather than a freelancer or an adviser?",
+    "options": [
+      "You'd like company while you work, and a friend has offered to help out on weekends.",
+      "The core of the business is work you can't do yourself, and it needs a long-term owner.",
+      "You need a logo and a landing page designed before your launch next month.",
+      "You'd like someone to share the cost of the tools and subscriptions you pay for."
+    ],
+    "answer": 1,
+    "why": "A co-founder shares responsibility for the whole company over years. One-off tasks and occasional help can usually come from a freelancer, an adviser or a later hire."
+  },
+  {
+    "q": "You're a developer building a tool for restaurant owners. Which potential co-founder probably adds the most?",
+    "options": [
+      "Another strong developer you enjoyed working with at your last job.",
+      "A well-known investor who has offered to make introductions for you.",
+      "A friend who loves the idea but can't give it any time for a year.",
+      "A former restaurant manager who has sold to restaurants and wants the same pace as you."
+    ],
+    "answer": 3,
+    "why": "Look for skills that complement yours and values that match. A second developer duplicates what you already do, and enthusiasm without time doesn't move the company forward."
+  },
+  {
+    "q": "You've met someone promising and you get along well. What's the most useful next step before either of you commits?",
+    "options": [
+      "Do a small project together with a clear finish, such as ten customer interviews in three weeks.",
+      "Agree on an equity split now, while you're both still excited about the idea.",
+      "Register the company together so that you both feel properly committed.",
+      "Meet for coffee every week for a few months to get to know each other better."
+    ],
+    "answer": 0,
+    "why": "Real work shows how someone follows through, communicates and handles disagreement. Equity and incorporation should wait until you know you can work well together."
+  },
+  {
+    "q": "When you pitch the idea to a potential co-founder, how should you handle what's still uncertain?",
+    "options": [
+      "Leave it out for now and share the risks once they've committed.",
+      "Mention the risks only if they ask you about them directly.",
+      "Say plainly what's unproven, what joining will cost them, and that it may fail.",
+      "Replace it with a forecast showing how large the market could become."
+    ],
+    "answer": 2,
+    "why": "Someone deciding whether to give up time and income deserves the full picture. People who join because of hype are more likely to leave when reality arrives."
+  },
+  {
+    "q": "A team uses a common vesting schedule: four years with a one-year cliff. A founder holding 30% of the shares leaves after six months. What typically happens to those shares?",
+    "options": [
+      "They keep all 30%, because the shares were issued to them on day one.",
+      "They usually keep none, because nothing vests until the one-year cliff.",
+      "They keep 3.75%, because 6 of the 48 months have passed.",
+      "They keep 15%, because they finished half of the first year."
+    ],
+    "answer": 1,
+    "why": "Under this common structure nothing vests before the cliff, so the company can usually buy back all of those shares. Real terms vary by agreement and country, which is why a lawyer should review yours."
+  }
+]

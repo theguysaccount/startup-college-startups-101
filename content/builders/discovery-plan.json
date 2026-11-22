@@ -1,0 +1,78 @@
+{
+  "slug": "discovery-plan",
+  "title": "Customer discovery plan",
+  "intro": "A short plan for testing your riskiest assumptions with real customers before you build. It's for you and anyone helping with interviews, and it ends with a date to decide.",
+  "fields": [
+    {
+      "id": "company",
+      "label": "Company or project name",
+      "help": "A working name is fine, such as \"Groomer booking app\", and you can change it later.",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g. Groomer booking app"
+    },
+    {
+      "id": "customer",
+      "label": "Who exactly is your customer?",
+      "help": "Describe them precisely enough to find 10 of them this week: \"owners of independent bakeries with one shop\" works, \"small businesses\" doesn't.",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g. Mobile dog groomers who work alone and take bookings by phone"
+    },
+    {
+      "id": "assumptions",
+      "label": "Your three riskiest assumptions",
+      "help": "Write each as a statement that could turn out false, riskiest first, for example \"Groomers will pay a monthly fee rather than keep using free messaging apps\".",
+      "type": "list",
+      "min": 3,
+      "required": true
+    },
+    {
+      "id": "questions",
+      "label": "Your interview questions",
+      "help": "Ask about what people did recently, not what they think of your idea, for example \"Tell me about your last late cancellation. What did you do?\"",
+      "type": "list",
+      "min": 5,
+      "required": true
+    },
+    {
+      "id": "where_to_find",
+      "label": "Where you'll find 10 people to talk to",
+      "help": "Name specific places, groups or people rather than \"social media\", for example \"the regional groomers' association forum\" or \"one introduction from each groomer I already know\".",
+      "type": "list",
+      "min": 3,
+      "required": true
+    },
+    {
+      "id": "disproof",
+      "label": "What would prove you wrong",
+      "help": "Describe what you'd need to hear or see to drop or change your riskiest assumption, for example \"most groomers say late cancellations happen less than once a month\".",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "id": "test",
+      "label": "The test you'll run",
+      "help": "Choose one simple test, such as a landing page, a hand-delivered version or a pre-order, and say exactly what people will be asked to do, for example \"pay a small deposit to join the first group of users\".",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "id": "threshold",
+      "label": "Your success threshold",
+      "help": "Set a number before you start so you can't redefine success afterward, for example \"at least 4 of 20 groomers pay a deposit\".",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g. At least 4 of 20 groomers pay a deposit"
+    },
+    {
+      "id": "decide_by",
+      "label": "The date you'll decide",
+      "help": "Pick a date two to six weeks away, such as four weeks from today, when you'll choose to continue, change course or stop.",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g. 13 June"
+    }
+  ],
+  "doc": "# Customer discovery plan: {{company}}\n\n**Customer:** {{customer}}\n\n## Riskiest assumptions\n{{assumptions}}\n\n## Interview questions\n{{questions}}\n\n## Where to find 10 people\n{{where_to_find}}\n\n## What would prove this wrong\n{{disproof}}\n\n## The test\n{{test}}\n\n**Success threshold:** {{threshold}}\n\n**Decision date:** {{decide_by}}\n\n*On the decision date, compare the results with the threshold and choose one path: continue, change one assumption and test again, or stop.*"
+}

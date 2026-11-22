@@ -1,0 +1,80 @@
+{
+  "slug": "founder-operating-plan",
+  "title": "Founder operating plan",
+  "intro": "A one-page plan for your next 90 days: your priorities, what you'll stop doing, how you'll run each week and who you'll ask for help. Write it for yourself, share it with anyone who works with you and reread it every Monday.",
+  "fields": [
+    {
+      "id": "company",
+      "label": "Company or project name",
+      "help": "Use the name you work under today; a plain description such as \"café ordering tool\" is fine until you have a real name.",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g. Café ordering tool"
+    },
+    {
+      "id": "period",
+      "label": "Which 90 days does this plan cover?",
+      "help": "Give exact start and end dates so you know when to write the next plan, for example 3 March to 31 May.",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g. 3 March to 31 May"
+    },
+    {
+      "id": "priorities",
+      "label": "Your top three priorities for the next 90 days",
+      "help": "Write results you can check, with a number and a date, such as \"15 cafés ordering through the tool every week by 31 May\", rather than activities like \"work on sales\".",
+      "type": "list",
+      "min": 3,
+      "required": true
+    },
+    {
+      "id": "stop_doing",
+      "label": "What you will stop doing",
+      "help": "List things that take your time without serving your three priorities, such as \"no networking events this quarter\" or \"no custom features for cafés that haven't paid\".",
+      "type": "list",
+      "min": 2,
+      "required": true
+    },
+    {
+      "id": "rhythm",
+      "label": "Your weekly rhythm",
+      "help": "Write one line per habit with a day and time, such as \"Monday 9:00, plan the week (30 minutes)\" or \"Tuesday and Thursday mornings, café visits\".",
+      "type": "list",
+      "min": 3,
+      "required": true
+    },
+    {
+      "id": "metric",
+      "label": "The one metric you'll watch every week",
+      "help": "Choose a number that shows customers getting value and can go down as well as up, such as cafés that ordered through the tool in the last seven days.",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g. Cafés that placed an order in the last 7 days"
+    },
+    {
+      "id": "metric_target",
+      "label": "Where that metric is today, and your 90-day target",
+      "help": "Be honest about the starting point, even if it's zero, for example \"4 today, 15 by 31 May\".",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g. 4 today, 15 by 31 May"
+    },
+    {
+      "id": "postponed",
+      "label": "Decisions you're postponing, and why",
+      "help": "Write one line per decision with why it can wait and what would make you decide, such as \"Hiring a developer: wait until 10 cafés have paid for two months\".",
+      "type": "list",
+      "min": 2,
+      "required": true
+    },
+    {
+      "id": "help",
+      "label": "Who you'll ask for help, and with what",
+      "help": "Name a person or group and a specific request, such as \"a former café owner I know: review our setup checklist\".",
+      "type": "list",
+      "min": 2,
+      "required": true
+    }
+  ],
+  "doc": "# Founder operating plan: {{company}}\n\n**Plan period:** {{period}}\n\n## Top three priorities\n{{priorities}}\n\n## Things to stop doing\n{{stop_doing}}\n\n## Weekly rhythm\n{{rhythm}}\n\n## Key metric\n{{metric}}\n\n**Today and 90-day target:** {{metric_target}}\n\n## Decisions on hold, and why\n{{postponed}}\n\n## Who to ask for help\n{{help}}\n\n*Reread this plan every Monday. When the period ends, review what happened and write the next one.*"
+}

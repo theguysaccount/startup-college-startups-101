@@ -1,0 +1,57 @@
+[
+  {
+    "q": "A founder planning a booking app for mobile dog groomers lists these assumptions. Which should she test first?",
+    "options": [
+      "She can build a booking calendar that works well on any kind of phone",
+      "Groomers will pay a monthly fee rather than use free messaging apps",
+      "Dog owners care a lot about their dogs being clean and well groomed",
+      "Groomers will want to use the app in more than one language"
+    ],
+    "answer": 1,
+    "why": "If groomers won't pay, nothing else matters, and she has no evidence either way. A booking calendar is known to be buildable, owners' care is well established, and language support only matters if the rest works."
+  },
+  {
+    "q": "Which interview question is most likely to give you reliable information?",
+    "options": [
+      "Would you use an app that reminds you when to reorder stock?",
+      "How much would you pay for a tool that solved this for you?",
+      "Don't you find it frustrating to keep track of stock on paper?",
+      "When did you last run out of stock, and what did you do?"
+    ],
+    "answer": 3,
+    "why": "A question about a specific recent event gets you facts about real behavior. The others ask for a prediction, a guessed price or agreement, which people often give just to be polite."
+  },
+  {
+    "q": "After you describe your idea, which response is the strongest evidence of real demand?",
+    "options": [
+      "They pay a small deposit to be among the first users",
+      "They say it's brilliant and that you should definitely build it",
+      "They ask you to let them know as soon as it launches",
+      "They say they'd probably use it most weeks"
+    ],
+    "answer": 0,
+    "why": "A deposit costs the person something, so it's a commitment rather than a compliment. Praise, interest and predictions cost nothing and are easy to give out of kindness."
+  },
+  {
+    "q": "You want to know whether busy parents will pay for weekly meal plans before you build any software. What's a good first test?",
+    "options": [
+      "Build the full app with recipe recommendations, then see who signs up",
+      "Post an online survey asking parents whether they like the idea",
+      "Make plans yourself for a few families who've paid, and email them",
+      "Research every competitor for a month before talking to anyone"
+    ],
+    "answer": 2,
+    "why": "A paid, hand-delivered version tests the riskiest question, whether people will pay and keep using it, in days rather than months. A survey collects opinions, and building first is the most expensive way to find out."
+  },
+  {
+    "q": "Why should you set a success threshold before you run a test?",
+    "options": [
+      "So you have a precise, impressive number to show investors later",
+      "So you can't quietly change what counts as success after seeing the results",
+      "So you only run the tests you're already confident you'll pass",
+      "Because a test finishes faster when there's a number attached"
+    ],
+    "answer": 1,
+    "why": "After seeing results, it's tempting to read a weak response as encouraging. A threshold written down in advance keeps you honest about what you learned."
+  }
+]

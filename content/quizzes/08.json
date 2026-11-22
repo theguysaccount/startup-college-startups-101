@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Which statement about raising a pre-seed round is most accurate?",
+    "options": [
+      "Most successful companies raise investment early, so it's the normal first step to take",
+      "Raising money is the clearest early sign that customers want what you're building",
+      "Many good companies never raise; customers' money, revenue and grants are real options",
+      "You should raise as much as you can while investors are still interested in your idea"
+    ],
+    "answer": 2,
+    "why": "Most companies never raise from investors, and most startups fail whether or not they raise. Customers paying you is a stronger sign of progress than investment."
+  },
+  {
+    "q": "You expect to spend $12,000 a month, your milestone is about 12 months away, and you want a six-month buffer. Roughly how much should your plan say you need?",
+    "options": [
+      "$144,000",
+      "$216,000",
+      "$72,000",
+      "$1,000,000, just to be safe"
+    ],
+    "answer": 1,
+    "why": "Twelve months to the milestone plus a six-month buffer is 18 months, and 18 × $12,000 = $216,000. The buffer covers delays and the time it may take to raise again or reach profitability."
+  },
+  {
+    "q": "An angel puts $30,000 into a post-money SAFE (a US practice) with a $3 million valuation cap. Later, new investors buy 25% of the company in a priced round above the cap. Ignoring option pools, roughly what does the angel own afterward?",
+    "options": [
+      "1%",
+      "25%",
+      "0.25%",
+      "0.75%"
+    ],
+    "answer": 3,
+    "why": "Before the round the angel owns $30,000 ÷ $3,000,000 = 1%. The new investors take 25%, so every existing holder keeps 75% of their share, and 1% becomes 0.75%."
+  },
+  {
+    "q": "After a first meeting, an investor says they love your company and want to stay in touch. What should you do next?",
+    "options": [
+      "Send a short thank-you with anything you promised, and keep talking to other investors",
+      "Stop contacting other investors so this one doesn't think you're being disloyal to them",
+      "Start hiring as if the money had arrived, so you don't lose valuable time",
+      "Wait quietly for them to send documents, so you don't come across as too eager or pushy"
+    ],
+    "answer": 0,
+    "why": "Enthusiasm in a meeting isn't a commitment. A prompt follow-up keeps the conversation going, and your other conversations protect you if this one doesn't turn into an investment."
+  },
+  {
+    "q": "Which of these is a red flag when someone offers to invest?",
+    "options": [
+      "They ask to speak with two of your customers before making a decision",
+      "They want you to sign within 24 hours, without a lawyer reviewing it",
+      "They ask to see your monthly numbers for the last six months",
+      "They say they need two weeks to talk it over with their partners first"
+    ],
+    "answer": 1,
+    "why": "Speaking to customers, checking numbers and taking time to decide are all normal. Pressure to sign quickly without legal review is a warning sign, whatever the terms say."
+  }
+]

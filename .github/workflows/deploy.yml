@@ -1,0 +1,98 @@
+# Build, test and deploy the course to GitHub Pages: on every push to main, and by hand. Fails safe: a failing test,
+# build or browser self-test stops before deploying; the last good site stays live.
+name: Build, test and deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  SITE_URL: ${{ vars.SITE_URL || format('https://{0}.github.io/{1}', github.repository_owner, github.event.repository.name) }}
+  SC_APPLY_URL: ${{ vars.SC_APPLY_URL }}
+  SC_SUPPORT_URL: ${{ vars.SC_SUPPORT_URL }}
+  SC_GOATCOUNTER: ${{ vars.SC_GOATCOUNTER }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - name: Content and code tests
+        run: npm test
+      - name: Build the site
+        run: node scripts/build.mjs
+      - name: End-to-end self-test in Chrome (a learner's path, every module and template, calculators, phone layout)
+        run: node scripts/selftest.mjs
+      - name: List pages that changed since the live deploy
+        run: node scripts/indexnow.mjs --diff "$SITE_URL/manifest.json" dist/manifest.json > changed-urls.txt
+      - name: Keep the self-test screenshots
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: selftest-${{ github.run_number }}
+          path: selftest-out
+          retention-days: 14
+      - uses: actions/upload-artifact@v7
+        with:
+          name: changed-urls
+          path: changed-urls.txt
+          retention-days: 7
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
+
+  deploy-again:
+    needs: [build, deploy]
+    if: failure() && needs.build.result == 'success' && needs.deploy.result == 'failure'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - run: sleep 60
+      - id: deployment
+        uses: actions/deploy-pages@v5
+
+  after-deploy:
+    needs: [deploy, deploy-again]
+    if: always() && (needs.deploy.result == 'success' || needs.deploy-again.result == 'success')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - uses: actions/download-artifact@v8
+        with:
+          name: changed-urls
+      - name: Check the live site
+        run: |
+          sleep 30
+          node scripts/linkcheck.mjs "$SITE_URL" --internal-only
+      - name: Tell search engines about changed pages (IndexNow)
+        run: node scripts/indexnow.mjs --file changed-urls.txt || true

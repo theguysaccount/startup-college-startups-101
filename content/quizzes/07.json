@@ -1,0 +1,57 @@
+[
+  {
+    "q": "You want help from an experienced operator you've never met. Which first message is most likely to get a useful reply?",
+    "options": [
+      "'Would you be my mentor? I've followed your work for years and would really love to learn from you.'",
+      "'Could I ask you two questions about how you priced your first contracts, in a 15-minute call?'",
+      "'Can I pick your brain over coffee some time? I'm flexible on dates and happy to travel.'",
+      "A long message with your full pitch deck attached, so they have all the context up front."
+    ],
+    "answer": 1,
+    "why": "A small, specific, time-limited ask is easy to say yes to and shows why you chose that person. Mentorship usually grows out of a few good exchanges like this, not out of asking for the title."
+  },
+  {
+    "q": "A mentor suggested a change to your pricing a month ago. What is most likely to make them want to keep helping you?",
+    "options": [
+      "Telling them what you tried and what happened, even though it didn't fully work",
+      "Agreeing with everything they said in the call so they feel properly listened to",
+      "Offering them a small amount of equity as a thank-you for that one conversation",
+      "Waiting until you have a major success to share before getting back in touch"
+    ],
+    "answer": 0,
+    "why": "Closing the loop shows follow-through and lets them see that their help made a difference. That is often what turns a one-off conversation into an ongoing relationship."
+  },
+  {
+    "q": "A mentor has helped you three times. When does it generally make sense to offer them a formal advisor role?",
+    "options": [
+      "Straight away, as a thank-you for the three times they've already helped you for free",
+      "When their well-known name would look impressive on your website and in your investor slides",
+      "Never, because advisors should only ever be paid in cash, never with company equity",
+      "When you need ongoing help in one area, they've delivered before and you can agree terms"
+    ],
+    "answer": 3,
+    "why": "An advisor role is a defined commitment, usually with equity attached, so it fits an ongoing, specific need and someone who has proven reliable. A written agreement, reviewed by a lawyer, sets out what each side expects."
+  },
+  {
+    "q": "An advisor's equity vests monthly over two years with a three-month cliff. They stop helping after two months. What generally happens to their grant?",
+    "options": [
+      "They keep the whole grant, because it was promised to them at the start",
+      "They keep two months' worth of the grant, because vesting is monthly",
+      "Nothing has vested yet, so they generally receive none of the grant",
+      "They keep half the grant, because they completed most of the cliff"
+    ],
+    "answer": 2,
+    "why": "Nothing vests before the cliff is reached, so leaving at two months generally means no equity. The exact outcome depends on the written agreement, which a lawyer should review."
+  },
+  {
+    "q": "Your number of active users fell this month. What should your monthly update do?",
+    "options": [
+      "Leave that metric out this month and bring it back once it has recovered",
+      "Report it as a lowlight, with the likely cause and what you're doing about it",
+      "Replace it with a different metric that went up, so the update stays positive",
+      "Skip this month's update and send a double-length update when the numbers improve"
+    ],
+    "answer": 1,
+    "why": "Updates build trust because they are consistent and honest. Readers notice when a number disappears, and seeing how you handle a bad month tells them more than a good month does."
+  }
+]

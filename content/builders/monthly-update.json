@@ -1,0 +1,17 @@
+{
+  "slug": "monthly-update",
+  "title": "Monthly update email",
+  "intro": "A short, honest email you send on the same day each month to mentors, advisors, early users and possible future investors. It shows your progress over time and makes it easy for people to help.",
+  "fields": [
+    {"id": "company", "label": "Company or project name", "help": "Use your working name if you haven't registered a company yet, for example the name on your landing page.", "type": "text", "required": true},
+    {"id": "month", "label": "Which month is this update for?", "help": "Cover the month that just ended and send it on the same day each time, for example the first Tuesday of the next month.", "type": "text", "required": true, "placeholder": "e.g. March 2027"},
+    {"id": "summary", "label": "The month in one line", "help": "Write this last, as one plain sentence a busy reader could stop after, for example 'Three new paying clubs and a cancellation problem we're fixing.'", "type": "text", "required": true, "placeholder": "e.g. Three new paying clubs, two cancellations and a fix on the way."},
+    {"id": "metrics", "label": "Key metrics, with last month's figure", "help": "Use the same three to five numbers every month, for example 'Paying clubs: 11 (last month 8)'.", "type": "list", "min": 3, "required": true, "placeholder": "e.g. Paying clubs: 11 (last month 8)"},
+    {"id": "wins", "label": "Wins", "help": "Short, concrete things that went well, for example 'First league with more than 20 teams signed up'.", "type": "list", "min": 1, "required": true, "placeholder": "e.g. First league with more than 20 teams signed up"},
+    {"id": "lowlights", "label": "Lowlights and what you're doing about them", "help": "Say what went badly and the specific action you're taking, for example 'Two clubs cancelled after their treasurer left, so we're adding a second admin to every account.'", "type": "textarea", "required": true, "placeholder": "e.g. Two of our eight paying clubs cancelled because..."},
+    {"id": "learned", "label": "What you learned", "help": "One insight about your customers, market or product, for example 'Clubs choose their tools in August, so we need to start selling in June.'", "type": "textarea", "required": true},
+    {"id": "asks", "label": "Specific asks", "help": "Each ask should say exactly what you need, from whom and by when, for example 'Introductions to two league secretaries before 30 April'.", "type": "list", "min": 1, "required": true, "placeholder": "e.g. Introductions to two league secretaries before 30 April"},
+    {"id": "thanks", "label": "Thank-yous", "help": "Name the people who helped this month and how, if they're happy to be named, for example 'Thanks to Maria for the payment reminder idea.'", "type": "textarea", "required": false}
+  ],
+  "doc": "# {{company}} monthly update: {{month}}\n\n**The month in one line:** {{summary}}\n\n## Key metrics\n{{metrics}}\n\n## Wins\n{{wins}}\n\n## Lowlights and what we're doing about them\n{{lowlights}}\n\n## What we learned\n{{learned}}\n\n## How you can help\n{{asks}}\n\n## Thank you\n{{thanks}}\n\nThanks for reading. If you can help with any of the asks above, just reply to this email. If you'd rather not receive these updates, reply and I'll take you off the list.\n"
+}

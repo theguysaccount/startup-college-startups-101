@@ -1,0 +1,57 @@
+[
+  {
+    "q": "You have twelve features planned for your MVP. Which question best decides what stays in the first version?",
+    "options": [
+      "Which of these features do our closest competitors already offer?",
+      "Which of these features could we build fastest with our current skills?",
+      "Would the test of our riskiest assumption still work without this one?",
+      "Which of these features would look most impressive in a demo?"
+    ],
+    "answer": 2,
+    "why": "The MVP exists to test your riskiest assumption. Anything the test doesn't need goes on the 'not yet' list, however useful it might be later."
+  },
+  {
+    "q": "You can't code, and you want to test whether small gyms will take class bookings through a shared link. What's the most sensible way to build the first version?",
+    "options": [
+      "Use no-code tools and handle some steps by hand, so you can change things yourself.",
+      "Hire an agency to build a full app with accounts, payments and a dashboard.",
+      "Spend six months learning to code so you can build it properly yourself.",
+      "Wait until you find a technical co-founder before testing anything at all."
+    ],
+    "answer": 0,
+    "why": "You want the fastest, cheapest working version that you can change yourself. A full agency build or months of learning would delay the test, and waiting for a co-founder could delay it indefinitely."
+  },
+  {
+    "q": "Your customers are independent bakery owners. Which launch plan is likely to teach you the most?",
+    "options": [
+      "Post on Show HN, because it can send thousands of visitors in a single day.",
+      "Launch on Product Hunt and ask your friends to upvote it in the first hour.",
+      "Buy a large ad campaign so as many people as possible see it at once.",
+      "Message the bakers you interviewed and post in the local business groups they use."
+    ],
+    "answer": 3,
+    "why": "The right audience matters more than a big one. Show HN and Product Hunt mostly reach tech-minded readers, and asking friends to upvote breaks many sites' rules."
+  },
+  {
+    "q": "Which launch post is most likely to get useful responses?",
+    "options": [
+      "One that calls the product revolutionary and says it will change the industry.",
+      "One that says who it's for, what it can't do yet, and asks one specific question.",
+      "One that lists every feature you plan to build over the next year.",
+      "One that shares projected user numbers to suggest strong momentum."
+    ],
+    "answer": 1,
+    "why": "Specific, honest posts invite help from the people you built the product for. Hype, long roadmaps and invented numbers make readers skeptical and don't tell you what you need to learn."
+  },
+  {
+    "q": "In launch week you get 2,000 visits and 300 sign-ups, but only 15 people complete the core action and 3 come back. What's the most useful reading?",
+    "options": [
+      "The launch worked, so it's time to spend money on ads and scale up.",
+      "The idea has clearly failed and you should abandon it straight away.",
+      "Interest exists, but few people reach the value; talk to sign-ups to learn why.",
+      "The numbers are too small to mean anything, so it's best to ignore them."
+    ],
+    "answer": 2,
+    "why": "Visits and sign-ups show curiosity, while activation and return use show value. The gap between them is your clearest lead, and conversations with people who signed up will help explain it."
+  }
+]

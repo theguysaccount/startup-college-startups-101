@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Which signal best suggests that a problem is worth building a company around?",
+    "options": [
+      "Nobody has ever tried to solve it, so the field is wide open",
+      "People already spend money or hours on clumsy workarounds",
+      "Friends and family say they love it whenever you describe it",
+      "It uses a new technology that investors are excited about"
+    ],
+    "answer": 1,
+    "why": "Workarounds show the pain is real enough that people already act on it. A total absence of attempts often means few people care, and compliments or trendy technology don't show demand."
+  },
+  {
+    "q": "Which one-line description would a stranger understand in a single read?",
+    "options": [
+      "An AI-native platform transforming the pharmacy supply chain",
+      "Next-generation inventory intelligence for modern healthcare",
+      "We help small pharmacies stop throwing away expired medicine",
+      "A seamless, end-to-end ecosystem for health businesses of every size"
+    ],
+    "answer": 2,
+    "why": "It names the customer and the problem in everyday words. The others sound impressive, but a reader couldn't say who they're for or what they do."
+  },
+  {
+    "q": "A founder writes: \"Why now: AI keeps getting better every year.\" What's the main weakness?",
+    "options": [
+      "It names no specific change that matters to this customer",
+      "It's too specific about the technology, so it will date",
+      "Why-now sections should cover market size, not technology",
+      "It should be cut, since readers rarely care about timing"
+    ],
+    "answer": 0,
+    "why": "A strong why-now names a specific change in technology, cost, rules or behavior and links it to this customer's problem. A trend that applies to every company explains nothing."
+  },
+  {
+    "q": "What is the main advantage of a one-page memo over a slide deck?",
+    "options": [
+      "A memo can hold far more detail, such as the full product roadmap",
+      "A memo is meant for investors, while a deck is meant for customers",
+      "A memo means you never have to present your idea in person",
+      "A memo must make sense without you, so gaps in thinking show"
+    ],
+    "answer": 3,
+    "why": "Slides are usually made to go with a talk and can skip the reasoning. A memo is forwarded and read without you, so every step of the argument has to be on the page."
+  },
+  {
+    "q": "A memo says: \"The global food market is worth trillions. If we win just 1%, that's a huge business.\" What's the problem?",
+    "options": [
+      "The share is too small; a memo should claim a much bigger slice",
+      "It ignores how many customers you can reach and what each pays",
+      "Market size should be left out of a memo entirely",
+      "It just needs a source, such as a published industry report"
+    ],
+    "answer": 1,
+    "why": "A top-down share of a huge market says nothing about your plan, even with a source attached. A bottom-up estimate, the customers you can realistically reach multiplied by what each pays in a year, shows you understand the business."
+  }
+]

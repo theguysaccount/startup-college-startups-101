@@ -1,0 +1,57 @@
+[
+  {
+    "q": "Which statement about raising money in your first year is most accurate?",
+    "options": [
+      "Every serious startup should raise outside money within its first year",
+      "Raising money is good evidence that customers want your product",
+      "Raise only if money is what's stopping you from reaching your next milestone",
+      "Raise as much as you can, as early as you can, while investors are still interested"
+    ],
+    "answer": 2,
+    "why": "Fundraising takes months of founder time and says nothing about whether customers want what you make. Many good companies never raise at all and grow from revenue, savings or grants instead."
+  },
+  {
+    "q": "You need to choose an invoicing tool, and switching to another one later would take an afternoon. How should you decide?",
+    "options": [
+      "Pick one quickly, and switch later if it causes problems",
+      "Spend two weeks comparing every option in detail before choosing",
+      "Wait until you have enough customers to know exactly what you need",
+      "Ask your advisers to vote on it and go with the majority"
+    ],
+    "answer": 0,
+    "why": "This decision is cheap to undo, so speed matters more than certainty. Save slow, careful thinking for decisions that are expensive or hard to reverse."
+  },
+  {
+    "q": "Which of these is the best example of a 90-day priority?",
+    "options": [
+      "Spend more time on sales and marketing than on building",
+      "Talk to as many people as possible about the idea this quarter",
+      "Launch two mobile apps and a website, and start a newsletter",
+      "Have 15 cafés ordering through the tool every week by 30 June"
+    ],
+    "answer": 3,
+    "why": "A good priority is a result you can check, with a number and a date. The others are activities, or several projects squeezed into one line."
+  },
+  {
+    "q": "You run a booking tool for hair salons. Which key metric tells you most about whether you're making progress?",
+    "options": [
+      "Followers across your social media accounts this month",
+      "Salons that took a booking through the tool this week",
+      "Total visitors to your website since the day you launched",
+      "Number of new features your team shipped this month"
+    ],
+    "answer": 1,
+    "why": "A useful metric shows customers getting value and can go down as well as up. Followers, total visits and features shipped can all rise while nobody uses the product."
+  },
+  {
+    "q": "Which is the strongest sign that it's time to hand a task to someone else?",
+    "options": [
+      "You've never done it before and don't yet understand how it works",
+      "An adviser told you founders shouldn't spend time on that kind of work",
+      "It repeats weekly, you could list the steps and it crowds out priorities",
+      "You find it boring and would rather work on something more interesting"
+    ],
+    "answer": 2,
+    "why": "Repeating, well-understood work that crowds out your priorities is a good candidate to hand off. Work you don't understand yet is usually worth doing yourself first, so you can explain what good looks like."
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "slug": "pitch-memo",
+  "title": "One-page pitch memo",
+  "intro": "A single page of plain writing that explains your company to someone who has never heard of it. Share it with possible co-founders, advisers, partners or, if you decide to raise money, investors.",
+  "fields": [
+    {
+      "id": "company",
+      "label": "Company or project name",
+      "help": "A working name is fine, such as \"Pharmacy expiry tracker\", and you can change it later.",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g. Pharmacy expiry tracker"
+    },
+    {
+      "id": "one_liner",
+      "label": "One-line description",
+      "help": "Say who it's for and what changes for them in words a stranger would understand, such as \"We help small pharmacies stop throwing away expired medicine.\"",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g. We help small pharmacies stop throwing away expired medicine."
+    },
+    {
+      "id": "problem",
+      "label": "The problem",
+      "help": "Describe what happens today, how often, what it costs and how people cope now, for example \"staff spend a day a month checking expiry dates by hand, and stock still expires\".",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "id": "customer",
+      "label": "The customer",
+      "help": "Describe them precisely enough that a reader could find one this week, and say who pays if that's someone else, for example \"owners of independent pharmacies with one to three branches; assistants use it, owners pay\".",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "id": "solution",
+      "label": "Your solution",
+      "help": "Explain what the customer does with your product and the result they get before mentioning any technology, for example \"staff scan each shelf with a phone once a week and get a list of what to sell first\".",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "id": "why_now",
+      "label": "Why now",
+      "help": "Name the specific recent change in technology, cost, rules or behavior that makes this possible or necessary now, for example \"medicine packs now carry a scannable code that includes the expiry date\".",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "id": "evidence",
+      "label": "Traction or evidence so far",
+      "help": "List only what's true today, with numbers, such as \"18 interviews with pharmacy owners\" or \"3 pharmacies on a paid pilot\", and if it's early, say so and add what you're testing next.",
+      "type": "list",
+      "min": 2,
+      "required": true
+    },
+    {
+      "id": "market_model",
+      "label": "Market and business model",
+      "help": "Say how you'll charge, then estimate the market from the bottom up, for example \"50 euros a month, and about 4,000 independent pharmacies in our country, so a ceiling of roughly 2.4 million euros a year\".",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "id": "team",
+      "label": "Team",
+      "help": "Say who is involved and why you're suited to this problem, for example \"a former pharmacy assistant who saw the problem every week and a developer who has built stock software\".",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "id": "ask",
+      "label": "What you're asking for, and your next milestone",
+      "help": "Make one concrete request tied to a milestone, for example \"introductions to five pharmacy owners for a paid pilot we want running by September\".",
+      "type": "textarea",
+      "required": true
+    }
+  ],
+  "doc": "# {{company}}\n\n**{{one_liner}}**\n\n## Problem\n{{problem}}\n\n## Customer\n{{customer}}\n\n## Solution\n{{solution}}\n\n## Why now\n{{why_now}}\n\n## Traction and evidence so far\n{{evidence}}\n\n## Market and business model\n{{market_model}}\n\n## Team\n{{team}}\n\n## Our ask and next milestone\n{{ask}}"
+}

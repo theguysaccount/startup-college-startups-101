@@ -1,0 +1,57 @@
+[
+  {
+    "q": "When is a first hire most likely to be well timed?",
+    "options": [
+      "Right after you raise money, so the money isn't sitting idle in the bank",
+      "When you feel busy all the time and want someone to help with everything",
+      "When there's recurring, valuable work you understand and can reliably pay for",
+      "When a talented friend becomes available, even if the role isn't clear to you yet"
+    ],
+    "answer": 2,
+    "why": "A good first hire takes on work that clearly matters, that you understand well enough to define, and that you can fund for a sustained period. Feeling busy or having cash isn't enough on its own."
+  },
+  {
+    "q": "Which practice makes your hiring process fairer?",
+    "options": [
+      "Setting criteria first, asking everyone the same questions and scoring before discussing",
+      "Letting each interviewer ask whatever they like, so every conversation feels natural and easy",
+      "Choosing whoever feels like the best culture fit with the founders after a friendly chat",
+      "Hiring mainly from your friends and former classmates, because you already trust them"
+    ],
+    "answer": 0,
+    "why": "Agreed criteria, consistent questions and independent scoring reduce the pull of gut feel and first impressions. 'Culture fit' judged as a feeling often just means 'similar to us'."
+  },
+  {
+    "q": "An early employee's options vest over four years with a one-year cliff, then monthly. They leave after exactly two years. Roughly how much has vested?",
+    "options": [
+      "None, because they didn't stay for the full four years",
+      "A quarter, because only the cliff portion counts",
+      "All of it, because they made it past the cliff",
+      "About half"
+    ],
+    "answer": 3,
+    "why": "A quarter vests at the one-year cliff and the rest vests monthly, so after two years about half has vested. The exact terms depend on the plan documents and local law."
+  },
+  {
+    "q": "You want someone to work full time, on your schedule, using your laptop and under your direction, with no end date. You'd like to call them a contractor. What's the key point?",
+    "options": [
+      "Calling them a contractor in the written contract is what settles their legal status",
+      "How the work really happens decides their status, and mistakes can mean back taxes",
+      "Contractors and employees are treated the same way by the law in almost every country",
+      "It only starts to matter once your company has more than ten people"
+    ],
+    "answer": 1,
+    "why": "Most legal tests look at the real working relationship, such as control, tools and how ongoing the work is, rather than the label. The tests differ by country, so check official guidance and get local advice."
+  },
+  {
+    "q": "A teammate shipped a change without testing it, and sign-ups were broken for a morning. Which response best follows the feedback structure in this module?",
+    "options": [
+      "Tell them they were careless and make clear it can't ever happen again",
+      "Say nothing for now and raise it at their formal review in six months",
+      "Ask for a moment, describe what happened and its effect, listen, then agree a next step",
+      "Mention it at the next team meeting without naming anyone, so that nobody feels singled out"
+    ],
+    "answer": 2,
+    "why": "Asking permission, describing the specifics and their effect, hearing their view and agreeing a next step keeps feedback clear and kind. Labels like 'careless' attack character, and delaying or hinting leaves the problem unsolved."
+  }
+]

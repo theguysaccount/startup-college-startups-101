@@ -1,0 +1,18 @@
+{
+  "slug": "mvp-launch-plan",
+  "title": "MVP plan and launch post",
+  "intro": "A one-page plan for the smallest product that tests your riskiest assumption, with a launch date, channels, the launch post itself and the numbers you'll watch in the first week. Share it with your team or with someone who will hold you to the date.",
+  "fields": [
+    {"id": "company", "label": "Company or project name", "help": "A working name is fine, such as 'Piano lesson booking'.", "type": "text", "required": true, "placeholder": "e.g. Piano lesson booking (working name)"},
+    {"id": "assumption", "label": "The assumption this MVP tests", "help": "One sentence that could turn out to be false, such as 'Piano teachers will send parents a booking link instead of arranging lessons by text.'", "type": "textarea", "required": true},
+    {"id": "job", "label": "The one job the MVP does", "help": "One sentence from the user's point of view, such as 'A parent books and pays for the next lesson from a link the teacher sends.'", "type": "text", "required": true, "placeholder": "e.g. A parent books and pays for the next lesson from a link the teacher sends."},
+    {"id": "features_in", "label": "Features in the first version", "help": "Only what the test needs, one per line, such as 'A booking page for each teacher'.", "type": "list", "min": 1, "required": true},
+    {"id": "features_out", "label": "Features left out for now", "help": "Everything else, one per line, such as 'Calendar sync' or 'Teacher mobile app'; this list is usually longer than the first.", "type": "list", "min": 3, "required": true},
+    {"id": "build", "label": "How you'll build it", "help": "The tools, who does the work and how long it should take, such as 'A no-code booking form with card payments, built by me in three weeks.'", "type": "textarea", "required": true},
+    {"id": "launch_date", "label": "Launch date", "help": "A real date two to six weeks away, shared with someone who will hold you to it.", "type": "text", "required": true, "placeholder": "e.g. 9 December"},
+    {"id": "channels", "label": "Launch channels", "help": "Two or three places your customers already spend time, one per line with a short reason, such as 'Regional piano teachers' forum: 2,000 members, launch posts allowed on Fridays.'", "type": "list", "min": 2, "required": true},
+    {"id": "post", "label": "The launch post", "help": "The full text: who it's for, the problem, what it does and doesn't do yet, how to try it, the one question you want answered and who you are.", "type": "textarea", "required": true},
+    {"id": "metrics", "label": "First-week numbers you'll watch", "help": "One per line, with the result that would encourage you, such as 'Parents completing a first booking: hoping for 20.'", "type": "list", "min": 3, "required": true}
+  ],
+  "doc": "# MVP plan and launch post: {{company}}\n\n## The assumption we're testing\n\n{{assumption}}\n\n## The one job the MVP does\n\n{{job}}\n\n## In the first version\n\n{{features_in}}\n\n## Left out for now\n\n{{features_out}}\n\n## How we'll build it\n\n{{build}}\n\n## Launch date\n\n**{{launch_date}}**\n\n## Where we'll launch\n\n{{channels}}\n\n## The launch post\n\n{{post}}\n\n## Numbers we'll watch in the first week\n\n{{metrics}}\n\nAt the end of launch week we'll review these numbers and talk to as many users as we can before deciding what to change."
+}
