@@ -3,16 +3,16 @@ n: 1
 slug: the-founders-job
 title: The founder's job
 summary: What a founder-CEO actually spends time on in year one, how to decide with incomplete information, protect your focus and run a weekly rhythm.
-minutes: 16
+minutes: 19
 builder: founder-operating-plan
 outcome: A one-page operating plan with your 90-day priorities, what you'll stop doing, a weekly rhythm and one metric to watch.
 ---
 
 ## What the job actually is
 
-This module has one goal: to show you what a founder running a young company actually spends time on, and to help you write a one-page operating plan for your next 90 days. You don't need a team or funding to use it. If you're working on your idea alone, the job is still yours.
+The goal of this module is to show you what a founder running a young company actually spends time on, and to help you turn that into a one-page operating plan for your next 90 days. You don't need a team or funding to use it. If you're working on your idea alone, the job is still yours.
 
-Titles matter very little in the first year. Whether you call yourself CEO, founder or nothing at all, the work comes down to five jobs that nobody else will do for you:
+Whatever your title, the work in the first year comes down to five jobs that nobody else will do for you:
 
 - **Set direction.** Decide which customer you serve, which problem you solve for them and what to build next. Just as important, decide what you won't build.
 - **Find customers.** Talk to them, sell to them and learn from them. In the first year, the founder is usually the entire sales team.
@@ -29,7 +29,7 @@ You'll make dozens of decisions a week with less information than you'd like. Wa
 To sort a decision quickly, ask two questions. If this turns out to be wrong, how much will it cost? And how long would it take to undo? Most decisions then fall into one of two groups:
 
 - **Cheap to undo.** Which invoicing tool to use, what to call a feature, which street to hand out flyers on. Decide quickly, often the same day and often alone. If you're wrong, you'll notice and switch.
-- **Expensive to undo.** Splitting ownership with a co-founder, quitting your job, signing a long contract, hiring someone full-time, taking investment. Slow down. Write out the options, sleep on it and talk to someone who has made the same decision.
+- **Expensive to undo.** Splitting ownership with a co-founder, quitting your job, signing a long contract, hiring someone full-time, taking investment. Slow down. Write out the options, sleep on it and talk to someone who has made the same decision. Where ownership, contracts or investment are involved, have a lawyer review the documents before you sign.
 
 For the expensive ones, write a short decision note: what you decided, what you rejected, what you expect to happen and when you'll check. Months later, compare what you expected with what actually happened. It's one of the few ways to improve your judgment on purpose.
 
@@ -39,7 +39,7 @@ Some decisions don't need making yet. Expanding to a second city, designing a pr
 
 ## Protecting your focus
 
-Founders rarely fail from laziness. More often they spread themselves across too many reasonable-looking things: a second type of customer, a conference, a competition, a feature for one demanding prospect, a partnership that "could be big". Each makes sense on its own. Together they leave no time for the work that shows whether the idea works at all. Most startups fail, and scattered effort makes it more likely that you run out of money or energy before you find out why.
+Founders rarely fail from laziness. More often they spread themselves across too many reasonable-looking things: a second type of customer, a conference, a competition, a feature for one demanding prospect, a partnership that "could be big". Each makes sense on its own. Together they leave no time for the work that shows whether the idea works at all. Most startups fail, and scattered effort makes it more likely that you run out of money or energy before you learn whether your idea works.
 
 Focus starts with choosing. Pick **three priorities for the next 90 days** and write each as a result you can check, with a number and a date: "15 cafés ordering through the tool every week by 30 June", not "work on sales". Three is enough to make progress and few enough to remember.
 
@@ -67,7 +67,7 @@ Plans fail quietly when nobody looks at them. A weekly rhythm is a few repeating
 2. **Daily, 10 minutes: check in.** Share what got done, what's next and what's stuck. If you work alone, write those three lines for yourself.
 3. **Two or three blocks a week: customer time.** Calls, visits, demos and support. Put them in your calendar first, before anything else fills the space.
 4. **Friday, 30 minutes: review.** What moved the metric, what didn't happen and what did customers teach you? Write five or six lines and send them to a co-founder or adviser, or keep them in a file. You don't need investors to write a weekly update, and having one makes asking for help much easier.
-5. **Once a month: check direction.** Are the three priorities still the right ones? Adjust if you've learned something important, and write a fresh plan every 90 days.
+5. **Once a month: check direction.** Are the three priorities still right? Adjust if you've learned something important, and write a fresh plan every 90 days.
 
 The rhythm only works if you watch the right number. Choose **one key metric** that shows customers getting real value and that can go down as well as up. Before you have a product, it might be customer conversations held each week or people who agree to a paid trial. After launch, it might be weekly active customers, repeat orders or revenue. Avoid numbers that only ever grow, or that feel good without telling you anything, such as total sign-ups since launch or social media followers.
 
